@@ -2,24 +2,60 @@
 <html lang="en">
     <head>
         <title>Search</title>
-        <style>
-            #search{
-                font-family: 'Courier New', Courier, monospace;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="google_style.css">
     </head>
-    <a id = "google search" href = "index.html">image search</a>
+    
     <body>
-        <h1>Google advanced search</h1>
-        <form id = "image" action="https://www.google.com/search?as_">
-            <input type = "text" placeholder="all these words" name="as_q">
-            <input type = "text" placeholder="this exact word or phrase" name="as_epq">
-            <input type = "text" placeholder="any of these words" name="as_oq">
-            <input type = "text" placeholder="none of these" name="as_eq">
+        <div class="right">
+            <a id = "google-search" href = "index.html">search google</a>
+        </div>
+        
+        <img width="100px" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google">
+        <h2 id="title-advancedSearch">Advanced Search</h2>
+        <h1>find pages with...</h1>
+        <form id = "find-pages-form" action="https://www.google.com/search?as_">
+            <div>
+                <label for="all-these-words">all these words: </label>
+                <input type = "text" id="all-these-words" placeholder="all these words" name="as_q">
+            </div>
+            <br>
+            <div>
+                <label for="this-exact-word-or-phrase">this exact word or phrase:</label>
+                <input  type = "text" id="this-exact-word-or-phrase" placeholder="this exact word or phrase" name="as_epq">
+                
+            </div>
+            <br>
+            <div>
+                <label for="any-of-these-words">any of these words:</label>
+                <input type = "text" id="any-of-these-words" placeholder="any of these words" name="as_oq">
+            </div>
+            <br>
+            <div>
+                <label for="none-of-these">none of these:</label>
+                <input type = "text" id="none-of-these" placeholder="none of these" name="as_eq">
+            </div>
+            <br>
+
+        
+            <h1>Then narrow your results by(optional)...</h1>
+            <label for="language-select">Select a language:</label>
+            <select id="language-select" name="language" name="lr">
+                <option value="">-- Select a language --</option>
+                <option value="lang_en" lang="en">English</option>
+                <option value="lang_es" lang="es">Español OR spanish</option>
+                <option value="lang_fr" lang="fr">Français OR french</option>
+                <option value="lang_de" lang="de">Deutsch OR german</option>
+                <option value="lang_pt" lang="pt">Português OR Portuguese</option>
+                <option value="lang_zh" lang="zh">中文 (简体) OR Chinese</option>
+                <option value="lang_ja" lang="ja">日本語 OR japanese</option>
+                <option value="lang_ko" lang="ko">한국어 OR Korean</option>
+                <option value="lang_ru" lang="ru">Русский OR russian</option>
+                <option value="lang_ar" lang="ar">العربية OR arabic</option>
+                <option value="lang_hi" lang="hi">हिन्दी OR hindi</option>
+                <option value="lang_ur" lang="ur">اردو OR urdu</option>
+            </select>    
+            <br>
             <input type="submit" value="Google advanced Search">
         </form>
-        <script>
-            /*cat, dog&as_epq=cat&as_oq=cat%2C+horse%2C%20dog&as_eq=donkey*/
-        </script>
     </body>
 </html>
