@@ -1,0 +1,53 @@
+.blue {
+    color:blue;
+}
+.red {
+    color: red;
+}
+.yellow {
+    color: goldenrod;
+}
+.green {
+    color: green;
+}
+#img-search{
+    color:green;
+}
+#advanced-search{
+    color: blue;
+}
+#google-search{
+    color: goldenrod;
+}
+.right{
+    text-align: right;
+}
+.center{
+    text-align: center;
+}
+#search{
+    border-radius: 20px;
+    width: 500px;
+    height: 30px;
+}
+#submit{
+    border-radius: 7px;   
+}
+#find-pages-form input{
+  text-align: center;  
+}
+.inline{
+    display: block;
+    margin: 0 auto;
+}
+#search{
+    font-family: 'Courier New', Courier, monospace;
+}
+#title-advancedSearch{
+    font-weight: lighter;
+    color: red;
+    margin-left: 20px;
+}
+h1{
+    font-weight: 100;
+}
