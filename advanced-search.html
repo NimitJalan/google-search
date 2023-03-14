@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            #search{
+                font-family: 'Courier New', Courier, monospace;
+            }
+        </style>
+    </head>
+    <a id = "google search" href = "index.html">image search</a>
+    <body>
+        <h1>Google advanced search</h1>
+        <form id = "image" action="https://www.google.com/search?as_">
+            <input type = "text" placeholder="all these words" name="as_q">
+            <input type = "text" placeholder="this exact word or phrase" name="as_epq">
+            <input type = "text" placeholder="any of these words" name="as_oq">
+            <input type = "text" placeholder="none of these" name="as_eq">
+            <input type="submit" value="Google advanced Search">
+        </form>
+        <script>
+            /*cat, dog&as_epq=cat&as_oq=cat%2C+horse%2C%20dog&as_eq=donkey*/
+        </script>
+    </body>
+</html>

@@ -2,19 +2,22 @@
 <html lang="en">
     <head>
         <title>Search</title>
-        <style>
-            #search{
-                font-family: 'Courier New', Courier, monospace;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="google_style.css">
+
     </head>
-    <a id = "google search" href = "index.html">image search</a>
+    
     <body>
-        <h1>Google image search</h1>
-        <form id = "image" action="https://www.google.com/search?">
-            <input type = "text" name="q">
+        <div class="right">
+            <a id = "google-search" href = "index.html">search google</a>
+        </div>
+        
+        <img width = "900px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Google_Images_2015_logo.svg/800px-Google_Images_2015_logo.svg.png" alt="google images">
+        <form class = "center" id = "image" action="https://www.google.com/search?">
+            <input id = "search" type = "text" name="q">
             <input type = "hidden" value="isch" name = "tbm">
-            <input type="submit" value="Google Image Search">
+            <br>
+            <input id = "submit" type="submit" value="Google Image Search">   
         </form>
     </body>
 </html>
+
